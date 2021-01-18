@@ -20,6 +20,6 @@ async def  on_member_remove(member):
     print(f'{member} leave!')
     await channel.send(f'{member} leave!')
 
-bot.run('ODAwNTUyNzQyODk1NzQ3MTIz.YATy1w.pGn-SHjBzdo065GpZbh4R5hyCas')
+bot.run('ODAwNTUyNzQyODk1NzQ3MTIz.YATy1w.AdsOkrdmbkRMuqsFP4PF-DTaqV8')
 
 
