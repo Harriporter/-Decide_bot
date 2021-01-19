@@ -6,7 +6,7 @@ with open('setting.json', mode = 'r',encoding = 'utf8') as jfile:
     jdata = json.load(jfile)
 
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix=":", intents=intents)
+bot = commands.Bot(command_prefix="#", intents=intents)
 client = discord.Client(intents=intents)
 
 @bot.event
@@ -28,6 +28,10 @@ async def  on_member_remove(member):
 @bot.command()
 async def ping(ctx):
     await ctx.send(f'{round(bot.latency*1000)}(ms)')
+
+@bot.command()
+async def Game(ctx):
+    await ctx.send(f'what do you want to play?')
 
 
 bot.run(jdata['TOKEN'])
